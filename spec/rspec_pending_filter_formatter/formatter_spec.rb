@@ -7,6 +7,10 @@ RSpec.describe RSpecPendingFilterFormatter::Formatter do
   let(:output) { StringIO.new }
   let(:formatter) { described_class.new(output) }
 
+  before do
+    allow(RSpec.configuration).to receive(:color_enabled?).and_return(false)
+  end
+
   describe "#example_pending" do
     it "outputs '*' for pending examples" do
       notification = double("notification")
