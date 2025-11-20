@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "RSpec formatter that filters out detailed pending test information"
   spec.description = "A custom RSpec formatter that suppresses detailed pending test output and shows only the count in the summary"
-  spec.homepage = "https://github.com/willnet/rspec-pending-filter-formatter"
+  spec.homepage = "https://github.com/willnet/rspec_pending_filter_formatter"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
